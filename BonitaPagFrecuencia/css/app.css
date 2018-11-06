@@ -4,6 +4,31 @@ body{
   	margin: 20px;
   	color: white;
 }
+a .icono {
+  color:white;
+  text-decoration:none
+}
+a .icono  :hover {
+  color:white;
+  text-decoration:none
+}
+
+a .icono :visited {
+  color:white;
+  text-decoration:none
+}
+.boton a {
+  color:#509FC2;
+  text-decoration:none
+}
+.boton a :hover {
+  color:white;
+  text-decoration:none
+}
+.boton a :visited {
+  color:white;
+  text-decoration:none
+}
 .navbar-color{
 	background-color: #2787AD;
 }
@@ -39,7 +64,9 @@ body{
 .niveles{
 	margin-top: 500px;
 }
-
+.inst{
+	margin-left: 230px;
+}
 
 .skills { 
   display:table; 
