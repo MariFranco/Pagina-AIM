@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Creative Coding Yea!</title>
+<head>
+<meta charset="utf-8">
+<script language="javascript" src="js/creative_coding.js"></script>
+<script language="javascript" src="js/canvas.js"></script>
+<script language="javascript" src="js/mic.js"></script>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" /> 
+
+
+</head>
+<body>
+
+<script>
+
+var ctx = createCanvas("canvas1");
+
+// make a grid 75 wide
+var grid = new Grid(100, 1);
+var data = new Object();
+data.frequency = [];
+function draw(){
+
+  ctx.background(235);
+
+  for (var i = 0; i < grid.length; i++) {
+    
+    if(i == 0){
+      data.volume = Mic.getVolume();
+      data.bass =  Mic.getBassVol();
+      data.mid =  Mic.getMidsVol();
+      data.highs = Mic.getHighsVol();
+    }
+    else{
+      data.frequency[i] = Mic.spectrum[i];
+    }
+    var s = Mic.spectrum[i];
+    //hsl(map(i, 0, grid.length, 0, 360), 80, 50);
+    ctx.fillStyle = hsl(map(i, 0, grid.length, 0, 360), 80, 50);
+    ctx.fillRect(grid.x[i], h - s, grid.spacing_x-1, s);
+    //console.log(Mic.data[i]);
+  }
+
+  //Frequency analizer
+
+  
+  //console.log(data);
+}
+
+
+
+</script>
+
+</body>
+
+</html>
