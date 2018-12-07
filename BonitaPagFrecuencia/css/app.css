@@ -1,13 +1,15 @@
 body{
 	background-color: #202224;
-  	font-family: Arial, sans-serif;
-  	margin: 20px;
-  	color: white;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: white;
 }
+
 a .icono {
   color:white;
   text-decoration:none
 }
+
 a .icono  :hover {
   color:white;
   text-decoration:none
@@ -17,53 +19,69 @@ a .icono :visited {
   color:white;
   text-decoration:none
 }
+
 .boton a {
   color:#509FC2;
   text-decoration:none
 }
+
 .boton a :hover {
   color:white;
   text-decoration:none
 }
+
 .boton a :visited {
   color:white;
   text-decoration:none
 }
+
 .navbar-color{
 	background-color: #2787AD;
 }
-#titulo{
+
+.h1{
 	margin: 100px;
 	font-size: 55px;
 }
+.h1 small{
+  font-size: 35px;
+}
+
 #iconoMusical{
 	margin-left: 130px;
 }
+
 .btn{
 	margin: 15px;
 	font-size: 28px;
 }
+
 #botonComenzar{
 	margin-top: 70px; 
 }
+
 #titulosNavBar{
 	margin-right: 400px;
 	font-size: 55px;
 }
+
 .involucrados{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	background-color: #6883C2; 
 }
+
 .fotos{
 	width: 180px;
 	height: 180px;
 	margin-right: 80px;
 	margin-left: 80px;
 }
+
 .niveles{
 	margin-top: 500px;
 }
+
 .inst{
 	margin-left: 230px;
 }
@@ -84,8 +102,10 @@ a .icono :visited {
   display:table-cell; 
   padding:5px 0; 
 }
-.label { font-size:.8em; color:#888; }
-
+.label { 
+  font-size:.8em; 
+  color:#888; 
+}
 
 .levelBar { 
   position:relative; top:100px;  
@@ -93,34 +113,34 @@ a .icono :visited {
   width:300px; height:25px; 
   border-top:2px solid #4b4d4f; 
   border-bottom:2px solid #4b4d4f; 
-  
   -webkit-transition:all 2s; transition:all 2s;
 }
+
 .levelBar:before, .levelBar:after { 
   content:''; display:block; 
   position:absolute; left:-11px; top:2px; 
   border-left:2px solid #4b4d4f; 
   border-top:2px solid #4b4d4f; 
   width:19px; height:19px; 
-  
   -webkit-transform:rotate(-45deg); 
   -moz-transform:rotate(-45deg); 
   transform:rotate(-45deg); 
-  
   -webkit-transition:all 2s; transition:all 2s;
 }
+
 .levelBar:after { 
   left:auto; right:-11px;  
   border-left:0;
   border-right:2px solid #4b4d4f; 
-  
   -webkit-transform:rotate(45deg);
   -moz-transform:rotate(45deg);
   transform:rotate(45deg);
 }
 .levelBar.leveled, 
 .levelBar.leveled:before, 
-.levelBar.leveled:after { -webkit-animation: glow 1s; animation: glow 1s;
+.levelBar.leveled:after { 
+  -webkit-animation: glow 1s; 
+  animation: glow 1s;
 }
 
 .leftArrow, .rightArrow { 
@@ -128,18 +148,17 @@ a .icono :visited {
   border-left:2px solid #4b4d4f; 
   border-top:2px solid #4b4d4f; 
   width:19px; height:19px; 
-  
   -webkit-transform:rotate(-45deg); 
   -moz-transform:rotate(-45deg); 
   transform:rotate(-45deg); 
-  
   -webkit-transition:all 2s; transition:all 2s;
 }
+
 .rightArrow { 
   left:auto; top:2px; right:-21px; 
   border-left:0;
   border-right:2px solid #4b4d4f; 
-  -webkit-transform:rotate(45deg);
+  -webkit-animation:rotate(45deg);
 }
 
 .leftArrow:before { 
@@ -148,7 +167,6 @@ a .icono :visited {
   border-right:2px solid #424f4b;
   border-bottom:2px solid #424f4b;
   height:15px; width:15px;
-  
   -webkit-transition:all 2s; transition:all 2s;
 }
 .rightArrow:before { 
@@ -157,18 +175,28 @@ a .icono :visited {
   border-left:2px solid #424f4b;
   border-bottom:2px solid #424f4b;
   height:15px; width:15px;
-  
   -webkit-transition:all 2s; transition:all 2s;
 }
 
 .leveled .rightArrow, 
 .leveled .leftArrow, 
 .leveled .rightArrow:before, 
-.leveled .leftArrow:before { -webkit-animation: glow 1s; animation: glow 1s;
+.leveled .leftArrow:before { 
+  -webkit-animation: glow 1s; 
+  animation: glow 1s;
 }
 
-.levelText { color:#fff; text-align:center; font-size:1.5em; opacity:0; }
-.levelText.fade { -webkit-animation: shiftUpFadeIn 2s; animation: shiftUpFadeIn 2s; }
+.levelText { 
+  color:#fff; 
+  text-align:center; 
+  font-size:1.5em; 
+  opacity:0; 
+}
+
+.levelText.fade { 
+  -webkit-animation: shiftUpFadeIn 2s; 
+  animation: shiftUpFadeIn 2s; 
+}
 
 
 @-webkit-keyframes glow {
